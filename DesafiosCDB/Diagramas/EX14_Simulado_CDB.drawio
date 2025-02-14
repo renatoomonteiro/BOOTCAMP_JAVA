@@ -1,0 +1,141 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.9 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.9">
+  <diagram name="Página-1" id="oq8Fx0Gr9Q7BUQIzySHC">
+    <mxGraphModel dx="1195" dy="697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ElogpAwiaDE17bvnWR04-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ElogpAwiaDE17bvnWR04-1" target="ElogpAwiaDE17bvnWR04-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-1" value="INÍCIO" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="334" y="40" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-2" value="FIM" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="329" y="1070" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ElogpAwiaDE17bvnWR04-3" target="ElogpAwiaDE17bvnWR04-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-3" value="v[10], i, j, maior=0" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="329" y="160" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ElogpAwiaDE17bvnWR04-4" target="ElogpAwiaDE17bvnWR04-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ElogpAwiaDE17bvnWR04-4" target="ElogpAwiaDE17bvnWR04-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="310" />
+              <mxPoint x="540" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-4" value="i=0; i&amp;lt;10;i++" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="364" y="280" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-6" value="v[i] = util.sorteia(1, 99)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="331" y="390" width="166" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ElogpAwiaDE17bvnWR04-6" target="ElogpAwiaDE17bvnWR04-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="299.9999999999999" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="415" />
+              <mxPoint x="190" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ElogpAwiaDE17bvnWR04-12" target="ElogpAwiaDE17bvnWR04-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-12" value="v[i]" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="356" y="500" width="116" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ElogpAwiaDE17bvnWR04-18" target="ElogpAwiaDE17bvnWR04-52">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-18" value="i=0; i&amp;lt;10;i++" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="190" y="497.5" width="106" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ElogpAwiaDE17bvnWR04-19" target="ElogpAwiaDE17bvnWR04-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-19" value="v[i]" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="369" y="980" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ElogpAwiaDE17bvnWR04-22" target="ElogpAwiaDE17bvnWR04-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-22" value="i=0; i&amp;lt;10;i++" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="356" y="600" width="106" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ElogpAwiaDE17bvnWR04-23" target="ElogpAwiaDE17bvnWR04-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-23" value="j=0; j&amp;lt;9; j++" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="356" y="690" width="106" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ElogpAwiaDE17bvnWR04-25" target="ElogpAwiaDE17bvnWR04-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ElogpAwiaDE17bvnWR04-25" target="ElogpAwiaDE17bvnWR04-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="213" y="805" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-25" value="se(v[j] &amp;gt; v[j+1])" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="342" y="780" width="134" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ElogpAwiaDE17bvnWR04-27" target="ElogpAwiaDE17bvnWR04-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="910" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="610" y="910" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-27" value="&lt;div&gt;maior = v[j]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;v[j] = v[j+1]&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; v[j+1] = maior&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="550" y="775" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ElogpAwiaDE17bvnWR04-28" target="ElogpAwiaDE17bvnWR04-35">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="193" y="910" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-28" value="i=0; i&amp;lt;10;i++" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="140" y="782.5" width="106" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ElogpAwiaDE17bvnWR04-35" target="ElogpAwiaDE17bvnWR04-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-35" value="" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;rounded=1;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="388" y="890" width="42" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-46" value="Vetor original" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="190" y="470" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ElogpAwiaDE17bvnWR04-52" target="ElogpAwiaDE17bvnWR04-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230.00000000000023" y="625.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-52" value="" style="ellipse;whiteSpace=wrap;html=1;rounded=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="81.5" y="603.75" width="37" height="37.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-61" value="Vetor crescente" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="755" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-64" value="SIM" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="780" width="48" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ElogpAwiaDE17bvnWR04-65" value="NÃO" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="782.5" width="48" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

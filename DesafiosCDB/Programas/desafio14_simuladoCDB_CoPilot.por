@@ -1,0 +1,61 @@
+programa
+{
+    /*
+    Dado um vetor V com "N" números inteiros distintos, verificar se estão
+    em ordem crescente.
+    */
+    inclua biblioteca Util --> util
+
+    funcao inicio()
+    {
+        inteiro v[10], i, j, temp
+        logico estaOrdenado = verdadeiro
+
+        // Preenche o vetor
+        para (i = 0; i < 10; i++)
+        {
+            v[i] = util.sorteia(1, 99) // Sorteia um número e atribui à posição do vetor
+        }
+
+        escreva("Vetor na ordem original:\n")
+        para (i = 0; i < 10; i++)
+        {
+            escreva(v[i], " ")
+        }
+
+        // Ordena o vetor em ordem crescente usando Bubble Sort
+        para (i = 0; i < 10; i++)
+        {
+            para (j = 0; j < 9 - i; j++)
+            {
+                se (v[j] > v[j + 1])
+                {
+                    temp = v[j]
+                    v[j] = v[j + 1]
+                    v[j + 1] = temp
+                }
+            }
+        }
+
+       
+
+        // Exibe o vetor ordenado
+        escreva("\n\nVetor na ordem crescente:\n")
+        para (i = 0; i < 10; i++)
+        {
+            escreva(v[i], " ")
+        }        
+    }
+}
+
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 180; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = ;
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
