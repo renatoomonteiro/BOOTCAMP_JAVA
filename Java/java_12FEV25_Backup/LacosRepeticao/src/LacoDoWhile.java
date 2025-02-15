@@ -1,0 +1,18 @@
+
+public class LacoDoWhile {
+
+	public static void main(String[] args) {
+
+		//Laço Do While
+		
+		int i = 1;
+		
+		do
+		{
+			i++;
+			System.out.println(i);
+		}
+		while(i<10);
+	}
+
+}

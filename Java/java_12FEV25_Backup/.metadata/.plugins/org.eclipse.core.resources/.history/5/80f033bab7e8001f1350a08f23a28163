@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class PoQueMao {
+
+	/*
+	 * 
+	 * */
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//System.out.println("Hello, World!");
+		
+		int n, x, y, z;
+		Scanner input = new Scanner(System.in);
+		
+		
+		System.out.println("Informe a quantidade de doces disponíveis: ");
+		n = input.nextInt();
+		
+		System.out.println("Informe quantos doces o Pô, que mão 'X' comeu: ");
+		x = input.nextInt();
+		
+		System.out.println("Informe quantos doces o Pô, que mão 'Y' comeu: ");
+		y = input.nextInt();
+		
+		System.out.println("Informe quantos doces o Pô, que mão 'Z' comeu: ");
+		z = input.nextInt();
+		
+		if(x+y+z <= n && x !=0 && y !=0 && z !=0 ) {
+			System.out.println("3");
+		} else if(x+y <= n || x+z <= n || y+x <= n || y+z <= n) {
+			System.out.println("2");
+		}
+		
+	}
+
+}

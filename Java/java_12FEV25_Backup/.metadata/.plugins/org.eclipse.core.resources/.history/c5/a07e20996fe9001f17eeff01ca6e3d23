@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Calculadora {
+	
+	int n1=0, n2=0, resultado=0;
+	char operacao=;
+	
+	System.out.println("Informe a operação que deseja realizar:\nAdição: +\nSubtração: -\n"
+			+ "Divisão: /\nMultiplicação: *");
+	operacao = input.next().charAt(0);
+	
+	switch(operacao) 
+	{
+	case '+':
+		resultado = n1 + n2;
+		System.out.println(n1 + " + " + n2 + " = " + resultado);
+		break;
+	case '*':
+		resultado = n1 * n2;
+		System.out.println(n1 + " * " + n2 + " = " + resultado);
+		break;
+	case '-':
+		resultado = n1 - n2;
+		System.out.println(n1 + " - " + n2 + " = " + resultado);
+		break;
+	case '/':
+		resultado = n1 / n2;
+		System.out.println(n1 + " / " + n2 + " = " + resultado);
+		break;
+	default:		
+		System.out.println("Operação inválida!");
+	}
+}

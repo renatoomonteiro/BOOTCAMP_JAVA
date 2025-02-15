@@ -1,0 +1,24 @@
+package br.com.cdb.bancodigital;
+
+public class Conta {
+	// private = modificador de acesso
+	private int numero;
+	private double saldo;
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public double gedepositar() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+}

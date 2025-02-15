@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class PoQueMao {
+
+	/*
+	 * 
+	 * */
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//System.out.println("Hello, World!");
+		
+		int n, x, y, z;
+		Scanner input = new Scanner(System.in);
+		
+		
+		System.out.println("Informe quantos doces o Pô, que mão 'X' comeu: ");
+		x = input.nextInt();
+		
+		
+		
+	}
+
+}

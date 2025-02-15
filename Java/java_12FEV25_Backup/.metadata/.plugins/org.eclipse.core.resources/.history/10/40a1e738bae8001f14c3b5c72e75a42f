@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class PoQueMao {
+
+	/*
+	 * 
+	 * */
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//System.out.println("Hello, World!");
+		
+		int n=0, x=0, y=0, z=0, evolui=0;
+		Scanner input = new Scanner(System.in);
+		
+		
+		System.out.println("Informe a quantidade de doces disponíveis: \nValor tem que ser menor ou igual a 1000");
+		n = input.nextInt();
+		
+		if(n>1000) {
+			System.out.println("Por gentileza, informe um valor menor ou igual a 1000");
+		} else {
+		
+			System.out.println("Informe quantos doces o Pô, que mão 'X' comeu: ");
+			x = input.nextInt();
+			
+			System.out.println("Informe quantos doces o Pô, que mão 'Y' comeu: ");
+			y = input.nextInt();
+			
+			System.out.println("Informe quantos doces o Pô, que mão 'Z' comeu: ");
+		}
+		
+		if(n >= x) {
+			evolui++;
+			n-=x;
+		}
+		if(n >= y) {
+			evolui++;
+			n-=y;
+		}
+		if(n >= z){
+			evolui++;
+			n-=z;
+		}
+		System.out.println(evolui);		
+	}
+}

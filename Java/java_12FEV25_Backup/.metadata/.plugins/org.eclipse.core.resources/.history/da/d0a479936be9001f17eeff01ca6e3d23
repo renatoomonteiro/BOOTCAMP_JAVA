@@ -1,0 +1,14 @@
+
+public class LacoComBreak {
+
+	public static void main(String[] args) {
+		
+		//for com break
+		for(int i=1; i<10; i++) {
+			if(i == 8)
+				brak;
+			System.out.println(i);
+		}
+	}
+
+}

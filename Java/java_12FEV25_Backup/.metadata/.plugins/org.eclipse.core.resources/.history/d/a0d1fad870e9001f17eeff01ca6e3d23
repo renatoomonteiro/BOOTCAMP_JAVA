@@ -1,0 +1,13 @@
+
+public class Calculadora {
+	
+	private double n1, n2, resultado;
+	private char operacao;
+	
+	public Calculadora(double n1, double n2, char operacao) {
+		this.n1 = n1;
+		this.n2 = n2;
+		this.operacao = operacao;
+	}
+	
+}

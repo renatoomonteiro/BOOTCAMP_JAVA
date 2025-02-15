@@ -1,0 +1,22 @@
+
+public class OperadorUnario {
+
+	public static void main(String[] args) {
+
+		int primeiroValor = 3, segundoValor = 3;
+		
+		//Pós incremento: exibe e depois incrementa
+		
+		System.out.println(primeiroValor++);
+		System.out.println(primeiroValor);
+		
+		//Pré incremento: incrementa e depois exibe
+		System.out.println();
+		
+		System.out.println(++segundoValor);
+		System.out.println(segundoValor);
+
+
+	}
+
+}

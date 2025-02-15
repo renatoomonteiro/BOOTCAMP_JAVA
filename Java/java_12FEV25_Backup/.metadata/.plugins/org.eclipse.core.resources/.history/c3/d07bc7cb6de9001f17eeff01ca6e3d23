@@ -1,0 +1,13 @@
+
+public class TernarioCondicional {
+
+	public static void main(String[] args) {
+		
+		//Ternário condicional
+		String texto = "";
+		int idade = 20;
+		
+
+	}
+
+}
