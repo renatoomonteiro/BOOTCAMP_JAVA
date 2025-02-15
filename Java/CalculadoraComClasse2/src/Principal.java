@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+public class Principal {
+
+	/*
+	 * Transformar a Calculadora em uma Classe Faça um sistema que possui duas
+	 * classes: Uma Principal, que terá função de front-end, e uma classe
+	 * Calculadora, que terá PELO MENOS os métodos de soma, subtração, multiplicação
+	 * e divisão. Faça com que esses métodos sejamoperacao = input.next().charAt(0);
+	 * private, logo não poderão ser chamados diretamente pela classe Principal.
+	 * Haverá apenas um método public chamado calcular, que receberá 2 valores
+	 * double e 1 valor char, e retornará um valor double como resultado da operação
+	 * escolhida. No interior desse método calcular estarão as chamadas para os
+	 * métodos privados. É proibido a entrada e saída na classe Calculadora. Todas
+	 * as entradas e saídas devem ser feitas somente na classe Principal, e nela
+	 * terá apenas 1 objeto da classe Calculadora
+	 */
+
+	public static void main(String[] args) {
+		/*
+		 * Modelo
+		 * 
+		 * Conta contaCorrente = new Conta(123456); contaCorrente.depositar(1000);
+		 * 
+		 * Conta contaPoupaca = new Conta(654321); contaPoupaca.depositar(500);
+		 * 
+		 * System.out.println("Conta nº" + contaCorrente.getNumero() +
+		 * " possui o saldo R$ " + contaPoupaca.getSaldo());
+		 * 
+		 */
+
+		// Calculadora calc = new Calculadora(10, 100, '+');
+		double n1, n2;
+		char operacao;
+
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Informe o primeiro valor: ");
+		n1 = input.nextInt();
+
+		System.out.println("Informe o segundo valor: ");
+		n2 = input.nextInt();
+
+		System.out.println(
+				"Informe a operação que deseja realizar:\nAdição: +\nSubtração: -\n" + "Divisão: /\nMultiplicação: *");
+		operacao = input.next().charAt(0);
+
+		Calculadora calc = new Calculadora(n1, n2, operacao);
+
+		if (operacao == '+') {
+			System.out.println(calc.calcular(n1, n2, operacao));
+		} else if (operacao == '-') {
+			System.out.println(calc.calcular(n1, n2, operacao));
+		} else if (operacao == '*') {
+			System.out.println(calc.calcular(n1, n2, operacao));
+		} else if (operacao == '/') {
+			System.out.println(calc.calcular(n1, n2, operacao));
+		} else {
+			System.out.println("Operação inválida!\nFim do programa");
+		}
+		// Farei melhorias para continuar a operação até que o usuário
+		// informe um operador aritimético válido conforme o exemplo
+	}
+	// Nãa esquiecer de fazer o commit!  
+}
