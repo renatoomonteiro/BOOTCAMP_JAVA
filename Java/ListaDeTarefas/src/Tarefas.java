@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Comparator;
 
 public class Tarefas {
 
@@ -18,15 +17,15 @@ public class Tarefas {
 	 */
 	
 	private String nomeTarefa;
-	
-	//Lista que receberá as tarefas
-	final ArrayList<String> listaTarefas = new ArrayList<>();
+	private int opcaoTarefa;
 	
 	//Método construtor da Classe Tarefas//
-	public Tarefas(String nomeTarefa) {
+	public Tarefas(String nomeTarefa, int opcaoTarefa) {
 		this.nomeTarefa = nomeTarefa;
+		this.opcaoTarefa = opcaoTarefa;
 	}
 
+	
 	//Getters and Setters dos campos
 	
 	public String getNomeTarefa() {
@@ -38,15 +37,16 @@ public class Tarefas {
 	}
 	
 	//Método privado para inserir tarefas
-	private void adicionarTarefa(ArrayList listaTarefas, String nomeTarefa) {
+	private ArrayList adicionarTarefa(ArrayList listaTarefas, String nomeTarefa) {
 		//Verifica se a tarefa não existe na lista
 		if(!listaTarefas.contains(nomeTarefa)) {
 			//Se verdadeiro, insere
-			listaTarefas.add(getNomeTarefa());
-		} else {
+			listaTarefas.add(nomeTarefa);
+			} else {
 			//Senão verifica qual é igual
 			listaTarefas.equals(nomeTarefa);
 		}
+		return listaTarefas;
 	}
 	
 	private void removerTarefa(ArrayList listaTarefas, String nomeTarefa) {
@@ -66,14 +66,36 @@ public class Tarefas {
 	}
 	
 	
-	private void listarOrdemAlfabetica(ArrayList listaTarefas) {
+	private void alfabetica(ArrayList listaTarefas) {
 		//Exibir as tarefas em ordem alfabética:
 		listaTarefas.sort(null);
 	}
 	
-	private void listarOrdemCronologica(ArrayList listaTarefas) {
-		 //Teste
+	private void cronologica(ArrayList listaTarefas) {
+		 //Exibe a tarefas em ordem cronológica
 	}
 	
+	/*
+	 * Criar o método público que acionará os métodos privados para 
+	 * adicionar; 
+	 * remover;
+	 * listar;
+	 * exibir em ordem alfabética;
+	 * exibir em ordem cronológica.
+	 * */
+	
+	public String crudTarefa(String nomeTarefa, int opcaoTarefa) {
+		
+		String resultadoTarefa = "";
+		
+		switch (opcaoTarefa) {
+		case 1: {
+			
+		}
+
+		}
+
+		return resultadoTarefa;
+	}
 
 }
