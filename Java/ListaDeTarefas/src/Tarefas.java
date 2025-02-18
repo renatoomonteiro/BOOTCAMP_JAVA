@@ -20,18 +20,28 @@ public class Tarefas {
 	private String nomeTarefa;
 	private int opcaoTarefa;
 	
-	//Lista que receberá as tarefas e que será possível adicionar; remover; listar; exibir em ordem alfabética; exibir em ordem cronológica
-	ArrayList<String> listaTarefas = new ArrayList<>();
+	private ArrayList<String> listaTarefas = new ArrayList<>();
 	
-	//Método construtor da Classe Tarefas//
-	public Tarefas(String nomeTarefa, int opcaoTarefa) {
+	
+	public Tarefas(String nomeTarefa, int opcaoTarefa, ArrayList<String> listaTarefas) {
+		super();
 		this.nomeTarefa = nomeTarefa;
 		this.opcaoTarefa = opcaoTarefa;
+		this.listaTarefas = listaTarefas;
 	}
 
+	public void addTarefa(String nomeTarefa) {
+		listaTarefas.add(nomeTarefa);				
+	}
 	
-	
-	//Getters and Setters dos campos	
+	public ArrayList<String> getListaTarefas() {
+		return listaTarefas;
+	}
+ 
+	public void setListaTarefas(ArrayList<String> listaTarefas) {
+		this.listaTarefas = listaTarefas;
+	}
+		
 	public String getNomeTarefa() {
 		return nomeTarefa;
 	}
@@ -39,124 +49,67 @@ public class Tarefas {
 	public void setNomeTarefa(String nomeTarefa) {
 		this.nomeTarefa = nomeTarefa;
 	}
-
 	
 	public int getOpcaoTarefa() {
 		return opcaoTarefa;
 	}
-
 
 	public void setOpcaoTarefa(int opcaoTarefa) {
 		this.opcaoTarefa = opcaoTarefa;
 	}
 
 
-
 	//Método privado para inserir tarefas
 	private void adicionarTarefa(String nomeTarefa) {
-		
 		listaTarefas.add(nomeTarefa);
-		//setNomeTarefa(nomeTarefa);
-		
-		
-		//return null;
 	}
 	
-	/*
-	 * //Verifica se a tarefa não existe na lista
-		if(!listaTarefas.contains(nomeTarefa)) {
-			//Se verdadeiro, insere
-			listaTarefas.add(nomeTarefa);
-			} else {
-			//Senão verifica qual é igual
-			listaTarefas.equals(nomeTarefa);
-		}
+	//Método privado para remover tarefas
+	private void removerTarefa(String nomeTarefa) {
+			listaTarefas.remove(nomeTarefa);
+	}
+	
+	//Método privado para listar tarefas
+	private ArrayList listarTarefas(ArrayList listaTarefas) {
+		
 		return listaTarefas;
-	 * */
-	
-	private void removerTarefa(ArrayList listaTarefas, String nomeTarefa) {
-		//Verifica se existe
-		if(listaTarefas.contains(nomeTarefa)) {
-			//Se positivo, remover com base em seu índice
-			listaTarefas.remove(listaTarefas.indexOf(nomeTarefa));
-		} else {
-			//Senão diz que não existe
-			listaTarefas.isEmpty();
-		}
 	}
-	
-	private void listarTarefas(ArrayList listaTarefas) {
-		//Exibe todos os elementos da lista
-		listaTarefas.toArray();
-	}
-	
 	
 	private void alfabetica(ArrayList listaTarefas) {
 		//Exibir as tarefas em ordem alfabética:
-		listaTarefas.sort(null);
+		Collections.sort(listaTarefas);
 	}
 	
-	private void cronologica(ArrayList listaTarefas) {
+	private void cronologica(ArrayList listaTarefas) { //Precisarei pesquisar mais para desenvolver este método
 		 //Exibe a tarefas em ordem cronológica
 	}
 	
-	/*
-	 * Criar o método público que acionará os métodos privados para 
-	 * adicionar; 
-	 * remover;
-	 * listar;
-	 * exibir em ordem alfabética;
-	 * exibir em ordem cronológica.
-	 * */
-	
 	public void crudTarefa(String nomeTarefa, int opcaoTarefa) {
-		
-		//String resultadoTarefa = "";
-		
+
 		switch (opcaoTarefa) {
 
-		// Opção 1
-		// Adicionar Terefas (verificar se a tarefa já existe antes de adicioná-la)
 		case 1: {
 			adicionarTarefa(nomeTarefa);
 			break;
-			
-		// Opção 2
-		// Remover Tarefa (Pedir confirmação para efetuar a remoção);
 		}
-		case 2:{
-			
+		case 2: {
+			removerTarefa(nomeTarefa);
 			break;
 		}
 		
-		// Opção 3
-		// Listar Tarefas;
-		case 3:{
-			
-			break;
-		}
-		// Listar em ordem alfabética;
-		case 4:{
-			
-			break;
-		}
-		// Listar em ordem cronológica
-		case 5:{
-			
-			break;
-		}
-		//Sair do programa
-		case 6:
-			
-			break;
-		}		
-		
-
+	}
 		//return resultadoTarefa;
+}
+
+	//Não conesegui deixar estes dois métodos dentro do Switch do método crudTarefa, pois ele recebe um nome de tarefas
+	//Nestes dos casos, precisei tratar o ArrayList inteiro, então chamei métodos privados dentro deles
+	public ArrayList listarTarefas1(ArrayList listaTarefas) {
+		return listarTarefas(listaTarefas);
 	}
 
-
-
-	
+	public void listarAlfabetica(ArrayList listaTarefas) {
+		 alfabetica(listaTarefas);
+	}
+	//Teste commit em 18/02/2025	
 
 }
