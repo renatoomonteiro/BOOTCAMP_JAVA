@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Tarefas {
 
@@ -19,6 +20,9 @@ public class Tarefas {
 	private String nomeTarefa;
 	private int opcaoTarefa;
 	
+	//Lista que receberá as tarefas e que será possível adicionar; remover; listar; exibir em ordem alfabética; exibir em ordem cronológica
+	ArrayList<String> listaTarefas = new ArrayList<>();
+	
 	//Método construtor da Classe Tarefas//
 	public Tarefas(String nomeTarefa, int opcaoTarefa) {
 		this.nomeTarefa = nomeTarefa;
@@ -26,8 +30,8 @@ public class Tarefas {
 	}
 
 	
-	//Getters and Setters dos campos
 	
+	//Getters and Setters dos campos	
 	public String getNomeTarefa() {
 		return nomeTarefa;
 	}
@@ -35,10 +39,31 @@ public class Tarefas {
 	public void setNomeTarefa(String nomeTarefa) {
 		this.nomeTarefa = nomeTarefa;
 	}
+
 	
+	public int getOpcaoTarefa() {
+		return opcaoTarefa;
+	}
+
+
+	public void setOpcaoTarefa(int opcaoTarefa) {
+		this.opcaoTarefa = opcaoTarefa;
+	}
+
+
+
 	//Método privado para inserir tarefas
-	private ArrayList adicionarTarefa(ArrayList listaTarefas, String nomeTarefa) {
-		//Verifica se a tarefa não existe na lista
+	private void adicionarTarefa(String nomeTarefa) {
+		
+		listaTarefas.add(nomeTarefa);
+		//setNomeTarefa(nomeTarefa);
+		
+		
+		//return null;
+	}
+	
+	/*
+	 * //Verifica se a tarefa não existe na lista
 		if(!listaTarefas.contains(nomeTarefa)) {
 			//Se verdadeiro, insere
 			listaTarefas.add(nomeTarefa);
@@ -47,7 +72,7 @@ public class Tarefas {
 			listaTarefas.equals(nomeTarefa);
 		}
 		return listaTarefas;
-	}
+	 * */
 	
 	private void removerTarefa(ArrayList listaTarefas, String nomeTarefa) {
 		//Verifica se existe
@@ -84,18 +109,54 @@ public class Tarefas {
 	 * exibir em ordem cronológica.
 	 * */
 	
-	public String crudTarefa(String nomeTarefa, int opcaoTarefa) {
+	public void crudTarefa(String nomeTarefa, int opcaoTarefa) {
 		
-		String resultadoTarefa = "";
+		//String resultadoTarefa = "";
 		
 		switch (opcaoTarefa) {
+
+		// Opção 1
+		// Adicionar Terefas (verificar se a tarefa já existe antes de adicioná-la)
 		case 1: {
+			adicionarTarefa(nomeTarefa);
+			break;
 			
+		// Opção 2
+		// Remover Tarefa (Pedir confirmação para efetuar a remoção);
 		}
-
+		case 2:{
+			
+			break;
 		}
+		
+		// Opção 3
+		// Listar Tarefas;
+		case 3:{
+			
+			break;
+		}
+		// Listar em ordem alfabética;
+		case 4:{
+			
+			break;
+		}
+		// Listar em ordem cronológica
+		case 5:{
+			
+			break;
+		}
+		//Sair do programa
+		case 6:
+			
+			break;
+		}		
+		
 
-		return resultadoTarefa;
+		//return resultadoTarefa;
 	}
+
+
+
+	
 
 }
