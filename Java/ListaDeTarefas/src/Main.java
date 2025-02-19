@@ -51,18 +51,28 @@ public class Main {
 			// Opção 1
 			// Adicionar Terefas (verificar se a tarefa já existe antes de adicioná-la)
 			if (opcao == 1) {
+				
+				
+				
 				System.out.println("Insira o nome da tarefa: \n");
 
 				nomeDaTarefa = input.nextLine();
 				
-				//listaTarefas.add(nomeDaTarefa.toString());
+				if(listaTarefas.contains(nomeDaTarefa)) {
+					System.out.println("\nJá há uma tarefa com esse nome\nRevise e tente novamente!\n");
+					System.out.println(listaTarefas);
+				}else {
+					//listaTarefas.add(nomeDaTarefa.toString());
+					
+					//criadorDeTarefas.addTarefa(nomeDaTarefa.toString());
+					//TODO Fazer a validação se já existe antes de inserir
+					criadorDeTarefas.crudTarefa(nomeDaTarefa, opcao);
+					//
+					// listaTarefas.add( new String(nomeDaTarefa));
+					// System.out.println(listaTarefas);
+
+				}
 				
-				//criadorDeTarefas.addTarefa(nomeDaTarefa.toString());
-				
-				criadorDeTarefas.crudTarefa(nomeDaTarefa, opcao);
-				//
-				// listaTarefas.add( new String(nomeDaTarefa));
-				// System.out.println(listaTarefas);
 
 				
 				
@@ -130,7 +140,8 @@ public class Main {
 			// Listar em ordem alfabética;
 			else if (opcao == 4) {
 				if (listaTarefas.isEmpty()) {
-					System.out.println("\nAinda não há tarefas a serem exibidas em ordem alfabética\n");
+					System.out.println("\nAinda não há tarefas a serem exibidas em ordem alfabética"+
+											"\nInsira alguma e tente novamente\n");
 				} else {
 					//Collections.sort(listaTarefas);
 					criadorDeTarefas.listarAlfabetica(listaTarefas);

@@ -77,7 +77,7 @@ public class Tarefas {
 	
 	private void alfabetica(ArrayList listaTarefas) {
 		//Exibir as tarefas em ordem alfabética:
-		Collections.sort(listaTarefas);
+		Collections.sort(listaTarefas, String.CASE_INSENSITIVE_ORDER);
 	}
 	
 	private void cronologica(ArrayList listaTarefas) { //Precisarei pesquisar mais para desenvolver este método
@@ -108,7 +108,7 @@ public class Tarefas {
 	}
 
 	public void listarAlfabetica(ArrayList listaTarefas) {
-		 alfabetica(listaTarefas);
+		 alfabetica(listaTarefas);		 
 	}
 	//Teste commit em 18/02/2025	
 
