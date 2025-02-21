@@ -85,7 +85,7 @@ public class Main {
 				} else {
 					System.out.println("\nInforme o nome da tarefa que deseja remover: \n");
 					
-					nomeDaTarefa = input.nextLine();;
+					nomeDaTarefa = input.nextLine();
 					
 
 					// Pegar o índice da tarefa que quero remover
