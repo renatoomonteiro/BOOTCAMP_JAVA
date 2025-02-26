@@ -35,7 +35,7 @@ public class OperacoesComTarefa {
 			return "Não há itens a serem exibidos!";
 		} else {
 			for (int i = 0; i < lista.size(); i++) {
-				retorno = retorno + (i + 1) + " ) Nome: " + lista.get(i).getNome() + " Descrição: "
+				retorno = retorno + (i + 1) + ") Nome: " + lista.get(i).getNome() + "\nDescrição: "
 						+ lista.get(i).getDescricao() +"\n";
 			}
 		}
@@ -53,7 +53,7 @@ public class OperacoesComTarefa {
 			ordenaPorNome(lista);
 			
 			for (int i = 0; i < lista.size(); i++) {
-				retorno = retorno + (i + 1) + " ) Nome: " + lista.get(i).getNome() + " Descrição: "
+				retorno = retorno + (i + 1) + " ) Nome: " + lista.get(i).getNome() + "Descrição: "
 						+ lista.get(i).getDescricao() +"\n";
 			}
 		}
