@@ -39,13 +39,25 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		LivroFisico evelynhugo = new LivroFisico("Os 7 maridos de Evelyn Hugo", "Taylor Jenkins Reid", "125214521", 35.30, 20, 25.3);
+		LivroFisico livroFisico = new LivroFisico("Os 7 Pecados Capitais", "Akira Toryama", "123456789", 15.20, 10, 20.5);
+		
+		//Ebook livroEBoEbook = new 
+		
+		Livro livro = new LivroFisico("Título do livro físico", "Autor do livro físico", "123456789", 30.0, 0.7, 11.5);
+		Livro livroEbook = new Ebook("Título do livro Ebook", "Autor do Ebook", "123456789", 30.0, 22);
+		
+		CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+		carrinho.livros.add(livroFisico);
+		carrinho.livros.add(livroEbook);
 		
 		ArrayList<Livro> livros = new ArrayList<Livro>();
 		
-		livros.add(evelynhugo);
+		//livros.add(livroFisico);
 		
-		System.out.println(evelynhugo.autor);
+		System.out.println(livroFisico.getAutor());
+		System.out.println(livroEbook.getAutor());
+		
+		System.out.println(carrinho.calcularTotal());
 		
 	}
 

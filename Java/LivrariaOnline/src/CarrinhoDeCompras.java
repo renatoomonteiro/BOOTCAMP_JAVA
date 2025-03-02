@@ -1,11 +1,21 @@
 import java.util.ArrayList;
+import java.util.List;
 public class CarrinhoDeCompras {
 
-	public ArrayList<Livro> livros = new ArrayList<Livro>();
+	public List<Livro> livros = new ArrayList<Livro>();
 	
-	public double calcularTotal(double precoTotal, double frete) {
-		return precoTotal + frete;
+	public double calcularTotal() {
 		
+		double total = 0;
+		
+		for(Livro l : livros) {
+			total += l.calcularPrecoTotal();
+		}
+		
+		return total;
 	}
+	//Teste commit 02/03/2025
+	
+	
 	
 }

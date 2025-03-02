@@ -1,22 +1,55 @@
 
-public class Livro {
+public abstract class Livro {
 	
-	public String titulo, autor, isbn;
-	public double preco;
-
+	private String titulo, autor, isbn;
+	private double preco;
+	
 	public Livro(String titulo, String autor, String isbn, double preco) {
-		super();
 		this.titulo = titulo;
 		this.autor = autor;
 		this.isbn = isbn;
-		this.preco = preco;
+		this.preco =  preco;
 	}
 	
-	
-	public double calcularPrecoTotal(double preco, double frete ) {
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+
+	public String getAutor() {
+		return autor;
+	}
+
+
+	public void setAutor(String autor) {
+		this.autor = autor;
+	}
+
+
+	public String getIsbn() {
+		return isbn;
+	}
+
+
+	public void setIsbn(String isbn) {
+		this.isbn = isbn;
+	}
+
+
+	public double getPreco() {
+		return preco;
+	}
+
+
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+
+
+	public Livro(){
 		
-		this.preco = preco;
-		//this.livroFisico.frete = frete;
-		return preco + frete;
 	}
+	
+	//Abstract não tem implementação (corpo)
+	public abstract double calcularPrecoTotal();
 }
