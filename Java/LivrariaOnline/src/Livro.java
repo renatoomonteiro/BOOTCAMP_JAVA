@@ -10,11 +10,17 @@ public abstract class Livro {
 		this.preco =  preco;
 	}
 	
+	
+	
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
 
 
+	public String getTitulo() {
+		return titulo;
+	}
+	
 	public String getAutor() {
 		return autor;
 	}

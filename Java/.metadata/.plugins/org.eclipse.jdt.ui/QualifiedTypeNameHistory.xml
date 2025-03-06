@@ -19,4 +19,12 @@
     <fullyQualifiedTypeName name="java.lang.LayerInstantiationException"/>
     <fullyQualifiedTypeName name="Livro"/>
     <fullyQualifiedTypeName name="LivroFisico"/>
+    <fullyQualifiedTypeName name="br.com.cdb.bancodigital.dao.ClienteDAO"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="DivisaoPorZeroException"/>
+    <fullyQualifiedTypeName name="DiaDaSemana"/>
+    <fullyQualifiedTypeName name="FormaDePagamento"/>
+    <fullyQualifiedTypeName name="sun.text.resources.FormatData"/>
 </qualifiedTypeNameHistroy>
