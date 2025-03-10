@@ -27,4 +27,6 @@
     <fullyQualifiedTypeName name="DiaDaSemana"/>
     <fullyQualifiedTypeName name="FormaDePagamento"/>
     <fullyQualifiedTypeName name="sun.text.resources.FormatData"/>
+    <fullyQualifiedTypeName name="Operacoes"/>
+    <fullyQualifiedTypeName name="Cartoes"/>
 </qualifiedTypeNameHistroy>
