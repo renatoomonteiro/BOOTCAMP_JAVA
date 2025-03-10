@@ -4,3 +4,4 @@ public class ProdutosDeSeguro {
 	private int numDaApolice;
 	private double valorApolice;
 }
+ 
