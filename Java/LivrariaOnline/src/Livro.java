@@ -1,4 +1,3 @@
-
 public abstract class Livro {
 	
 	private String titulo, autor, isbn;

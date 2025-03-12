@@ -1,4 +1,3 @@
-
 public class LivroFisico extends Livro {
 
 	private double peso, frete;

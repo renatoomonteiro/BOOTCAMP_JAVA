@@ -5,7 +5,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		ListaDeTarefas gerenciadorDeTarefas = new ListaDeTarefas();
+		//ListaDeTarefas gerenciadorDeTarefas = new ListaDeTarefas();
 		
 		
 		Scanner input = new Scanner(System.in);
