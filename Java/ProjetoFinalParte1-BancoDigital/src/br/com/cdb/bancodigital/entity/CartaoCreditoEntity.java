@@ -1,5 +1,7 @@
 //Teste commit 10/03/2025 
-public class CartaoCredito extends Cartoes{
+package br.com.cdb.bancodigital.entity;
+
+public class CartaoCreditoEntity extends CartoesEntity{
 	private String dadosClienteCartaoCredito;
 	private int numcartaoCredito, senhaCartaoCredito;
 	private double limitePreAprovado;
