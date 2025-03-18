@@ -1,2 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.awt.List"/>
+    <fullyQualifiedTypeName name="jdk.internal.misc.FileSystemOption"/>
+    <fullyQualifiedTypeName name="br.com.cdb.heranca.model.Aluno"/>
+    <fullyQualifiedTypeName name="br.com.cdb.heranca.model.Pessoa"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+    <fullyQualifiedTypeName name="br.com.cdb.heranca.model.Funcionario"/>
+    <fullyQualifiedTypeName name="br.com.cdb.heranca.model.Faxineiro"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.Process"/>
+    <fullyQualifiedTypeName name="br.com.cdb.heranca.model.Professor"/>
+    <fullyQualifiedTypeName name="br.com.cdb.bancodigital.ContaBancaria"/>
+    <fullyQualifiedTypeName name="br.com.cdb.bancodigital.ContaPoupanca"/>
+    <fullyQualifiedTypeName name="br.com.cdb.bancodigital.ContaCorrente"/>
+    <fullyQualifiedTypeName name="Tarefa"/>
+    <fullyQualifiedTypeName name="ListaDeTarefas"/>
+    <fullyQualifiedTypeName name="java.lang.LayerInstantiationException"/>
+    <fullyQualifiedTypeName name="Livro"/>
+    <fullyQualifiedTypeName name="LivroFisico"/>
+    <fullyQualifiedTypeName name="br.com.cdb.bancodigital.dao.ClienteDAO"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="DivisaoPorZeroException"/>
+    <fullyQualifiedTypeName name="DiaDaSemana"/>
+    <fullyQualifiedTypeName name="FormaDePagamento"/>
+    <fullyQualifiedTypeName name="sun.text.resources.FormatData"/>
+    <fullyQualifiedTypeName name="Operacoes"/>
+    <fullyQualifiedTypeName name="Cartoes"/>
+</qualifiedTypeNameHistroy>

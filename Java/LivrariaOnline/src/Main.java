@@ -32,32 +32,46 @@
  * e o preço total de todos os livros no carrinho de compras.
  * */
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		LivroFisico livroFisico = new LivroFisico("Os 7 Pecados Capitais", "Akira Toryama", "123456789", 15.20, 10, 20.5);
-		
-		//Ebook livroEBoEbook = new 
-		
+		LivroFisico livroF03 = new LivroFisico("Meu celular me chamou", "9998547", "Androidus Goegle", 55.0, 0.6, 8.0);
+		LivroFisico livroF04 = new LivroFisico("Arlinda mulher", "13549", "Eguerlia Feia", 45.0, 0.3, 5.0);
 		Livro livro = new LivroFisico("Título do livro físico", "Autor do livro físico", "123456789", 30.0, 0.7, 11.5);
+		Livro livroF01 = new LivroFisico("Virei um cachorro", "12324687", "Antonio", 60.0, 0.8, 10.0);
+		Livro livroF02 = new LivroFisico("Como construir um gerador", "648911668", "Zombarto Eletric", 47.0, 0.2, 3.0);
+		
 		Livro livroEbook = new Ebook("Título do livro Ebook", "Autor do Ebook", "123456789", 30.0, 22);
+		Ebook ebook03 = new Ebook("Chamando", "6411118", "Terrous Medus", 15.5, 20);
+		Ebook ebook04 = new Ebook("Quero pudim", "6799888", "Fluminus Delsius", 15.5, 20);
 		
 		CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+		
 		carrinho.livros.add(livroFisico);
+		carrinho.livros.add(livroF03);
+		carrinho.livros.add(livroF04);
+		carrinho.livros.add(livro);
+		carrinho.livros.add(livroF01);
+		carrinho.livros.add(livroF02);
+		
+		
 		carrinho.livros.add(livroEbook);
+		carrinho.livros.add(ebook03);
+		carrinho.livros.add(ebook04);
 		
-		ArrayList<Livro> livros = new ArrayList<Livro>();
-		
+		//ArrayList<Livro> livros = new ArrayList<Livro>();
 		//livros.add(livroFisico);
 		
 		System.out.println(livroFisico.getAutor());
 		System.out.println(livroEbook.getAutor());
 		
-		System.out.println(carrinho.calcularTotal());
+		System.out.println("Total a pagar: R$" + carrinho.calcularTotal());
+		System.out.println("Livros do carrinho: " + carrinho.imprimirListaLivroFisico());
+		
 		
 	}
 
