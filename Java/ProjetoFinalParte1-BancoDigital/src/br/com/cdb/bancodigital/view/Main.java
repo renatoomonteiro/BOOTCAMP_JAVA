@@ -7,6 +7,7 @@ public class Main {
 		Menu menuPrincipal = new Menu();
 		//TODO -> Editar as mensagens de retorno, validações e o restante, etc. de acordo com o enunciado 
 		//TODO - > Validar pesquisa de cliente por CPF quando este for inválido
+		//Teste commit de casa em 19/03/2025 
 	}
 
 }
